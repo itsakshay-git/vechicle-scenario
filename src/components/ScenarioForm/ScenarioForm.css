@@ -1,0 +1,75 @@
+.scenario-form{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    height: 92vh;
+}
+
+.scenario-form h2{
+    width: 100%;
+    text-align: start;
+    padding: 30px;
+}
+
+.scenario-form form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-container{
+    display: flex;
+    background-color: rgb(68, 68, 68);
+    width: 100%;
+}
+
+.inputs{
+    height: 200px;
+    padding: 40px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.inputs label{
+    text-align: start;
+}
+
+.inputtext{
+    height: 50px;
+    background-color: black;
+    color: white;
+    border: 2px solid gray;
+    font-size: 2rem;
+}
+
+.btn-group{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.add{
+    background-color: lightgreen;
+    padding: 20px;
+    border-radius: 5px;
+    margin-right: 20px;  
+}
+
+.reset{
+    background-color: rgb(240, 193, 105);
+    padding: 20px;
+    border-radius: 5px; 
+    margin-right: 20px;  
+}
+
+.back{
+    background-color: rgb(84, 153, 255);
+    padding: 20px;
+    border-radius: 5px;
+}

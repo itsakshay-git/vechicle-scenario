@@ -1,0 +1,45 @@
+{
+  "scenarios": [
+    {
+      "id": 1685380448490,
+      "name": "scenario1",
+      "time": "12"
+    },
+    {
+      "id": 1685463495757,
+      "name": "scenario2",
+      "time": 1500
+    },
+    {
+      "id": 1685465702590,
+      "name": "scenario3",
+      "time": 1400
+    }
+  ],
+  "vehicles": [
+    {
+      "id": "1234",
+      "name": "hero",
+      "initialPositionX": 40,
+      "initialPositionY": 50,
+      "speed": 50,
+      "direction": "Upwards"
+    },
+    {
+      "id": "567",
+      "name": "pulser",
+      "initialPositionX": 10,
+      "initialPositionY": 30,
+      "speed": 120,
+      "direction": "Backwards"
+    },
+    {
+      "id": "1234567",
+      "name": "auto",
+      "initialPositionX": 50,
+      "initialPositionY": 20,
+      "speed": 70,
+      "direction": "Downwards"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+.sidenav{
+    width: 250px;
+    min-height: 100vh ;
+    background-color: lightgray;
+    padding-top: 50px;
+}
+
+
+.list{
+    list-style-type: none;
+    list-style: none;
+    text-align: left;
+    padding-left: 0;
+}
+
+.list li{
+    padding-bottom: 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+.list li:hover{
+    background-color: rgb(240, 238, 238);
+}
+
+.list li a{
+    text-decoration: none;
+    color: black;
+}
+
+.list li a:hover{
+    color: rgb(99, 163, 247);
+}

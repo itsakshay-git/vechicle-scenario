@@ -1,0 +1,36 @@
+.vehicle-form{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.vehicle-form h2{
+    width: 100%;
+    text-align: start;
+    padding: 30px;
+}
+
+.vehicle-form form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.vehicle-inputcontainer{
+    background-color: rgb(68, 68, 68);
+    width: 100%;
+}
+
+.flex-vehicle{
+    display: flex;
+}
+
+.vehicletext{
+    height: 40px;
+    background-color: black;
+    color: white;
+    border: 2px solid gray;
+    font-size: 0.8rem;
+}
