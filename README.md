@@ -1,10 +1,38 @@
-# Getting Started with Create React App
+# React.js Scenario and Vehicle Simulation Application
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+This is a React.js application that allows users to create, display, update, and delete scenarios and vehicles. Each scenario can have multiple vehicles, and the vehicles can move based on the user's input.
 
-In the project directory, you can run:
+## Features
+1. Create, display, update, and delete scenarios and vehicles.
+2. Start simulation to move vehicles based on the specified direction and speed.
+3. Hide vehicles if they go outside the container.
+4. Proper validation for adding vehicles to prevent positions greater than the graph container size.
+
+## Technologies Used
+1. React.js: Front-end JavaScript library for building user interfaces.
+2. json-server: For storing data in a JSON file and serving it via a RESTful API.
+
+## Prerequisites
+Before running this application, make sure you have the following prerequisites installed:
+
+1. Node.js: https://nodejs.org
+2. json-server: You can install it globally by running npm install -g json-server.
+
+## Usage
+1. Start the JSON server:
+json-server --watch db.json --port 3001
+2. Start the React application:
+npm start
+
+
+## screenshot
+
+![Screenshot (196)](https://github.com/itsakshay-git/vechicle-scenario/assets/110621476/ac18bb29-6b21-4e9a-a428-f0592fa2c57d)
+![Screenshot (197)](https://github.com/itsakshay-git/vechicle-scenario/assets/110621476/1a938a07-4690-4904-916a-754ce0b3d2f5)
+![Screenshot (199)](https://github.com/itsakshay-git/vechicle-scenario/assets/110621476/693d133e-b55e-491f-a378-3feda5a2213d)
+![Screenshot (200)](https://github.com/itsakshay-git/vechicle-scenario/assets/110621476/2e4f1813-90f1-4406-b492-dfb495de5cc9)
 
 ### `npm start`
 
