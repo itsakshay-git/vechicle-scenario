@@ -6,7 +6,7 @@ const Sidebar = () => {
 
   useEffect(() => {
     // Fetch scenarios from the json-server API and update the state
-    fetch('http://localhost:5000/scenarios')
+    fetch('https://vechicle-scenario-api.onrender.com/scenarios')
       .then((response) => response.json())
       .then((data) => setScenarios(data));
   }, []);

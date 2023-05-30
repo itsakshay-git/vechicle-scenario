@@ -11,7 +11,7 @@ const HomePage = () => {
   useEffect(() => {
     // Fetch scenarios from the json-server API and update the state
     axios
-      .get("http://localhost:5000/scenarios")
+      .get("https://vechicle-scenario-api.onrender.com/scenarios")
       .then((response) => {
         setScenarios(response.data);
       })
@@ -20,7 +20,7 @@ const HomePage = () => {
       });
 
       axios
-      .get("http://localhost:5000/vehicles")
+      .get("https://vechicle-scenario-api.onrender.com/vehicles")
       .then((response) => {
         setvehicledata(response.data);
       })
@@ -36,7 +36,7 @@ const HomePage = () => {
     setSelectedScenario(scenario);
 
     axios
-      .get(`http://localhost:5000/vehicles?scenarioId=${scenarioId}`)
+      .get(`https://vechicle-scenario-api.onrender.com/vehicles?scenarioId=${scenarioId}`)
       .then((response) => {
         setVehicles(response.data);
       })
@@ -47,7 +47,7 @@ const HomePage = () => {
 
   const handleDeleteScenario = (vechicleId) => {
     axios
-      .delete(`http://localhost:5000/vehicles/${vechicleId}`)
+      .delete(`https://vechicle-scenario-api.onrender.com/vehicles/${vechicleId}`)
       .then(() => {
         setvehicledata((prevVechicle) =>
           prevVechicle.filter((vechicle) => vechicle.id !== vechicleId)
@@ -120,7 +120,7 @@ const HomePage = () => {
 
   const fetchScenarios = () => {
     axios
-      .get("http://localhost:5000/scenarios")
+      .get("https://vechicle-scenario-api.onrender.com/scenarios")
       .then((response) => {
         setScenarios(response.data);
       })
@@ -133,7 +133,7 @@ const HomePage = () => {
   const handleSaveClick = () => {
     axios
       .put(
-        `http://localhost:5000/scenarios/${selectedScenario.id}`,
+        `https://vechicle-scenario-api.onrender.com/scenarios/${selectedScenario.id}`,
         selectedScenario
       )
       .then((response) => {

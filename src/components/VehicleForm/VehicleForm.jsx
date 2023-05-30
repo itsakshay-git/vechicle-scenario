@@ -16,7 +16,7 @@ const VehicleForm = () => {
   useEffect(() => {
     // Fetch scenarios from the json-server API and update the state
     axios
-      .get("http://localhost:5000/scenarios")
+      .get("https://vechicle-scenario-api.onrender.com/scenarios")
       .then((response) => {
         setScenarios(response.data);
       })
@@ -55,7 +55,7 @@ const VehicleForm = () => {
       direction,
     };
 
-    fetch("http://localhost:5000/vehicles", {
+    fetch("https://vechicle-scenario-api.onrender.com/vehicles", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -90,7 +90,7 @@ const VehicleForm = () => {
     setSelectedScenario(scenario);
 
     axios
-      .get(`http://localhost:5000/vehicles?scenarioId=${scenarioId}`)
+      .get(`https://vechicle-scenario-api.onrender.com/vehicles?scenarioId=${scenarioId}`)
       .then((response) => {
         setVehicles(response.data);
       })

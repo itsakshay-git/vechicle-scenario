@@ -12,7 +12,7 @@ const AllScenario = () => {
     useEffect(() => {
         // Fetch scenarios from the json-server API and update the state
         axios
-          .get("http://localhost:5000/scenarios")
+          .get("https://vechicle-scenario-api.onrender.com/scenarios")
           .then((response) => {
             setScenarios(response.data);
           })
@@ -24,7 +24,7 @@ const AllScenario = () => {
     const handleDeleteScenario = (scenarioId) => {
         // Send a DELETE request to the json-server API to delete the scenario
         axios
-          .delete(`http://localhost:5000/scenarios/${scenarioId}`)
+          .delete(`https://vechicle-scenario-api.onrender.com/scenarios/${scenarioId}`)
           .then(() => {
             // Remove the deleted scenario from the state
             setScenarios((prevScenarios) =>
@@ -45,7 +45,7 @@ const AllScenario = () => {
     const fetchScenarios = () => {
         // Fetch scenarios from the json-server API and update the state
         axios
-          .get("http://localhost:5000/scenarios")
+          .get("https://vechicle-scenario-api.onrender.com/scenarios")
           .then((response) => {
             setScenarios(response.data);
           })
@@ -59,7 +59,7 @@ const AllScenario = () => {
         // Send a PUT request to update the scenario details
         axios
           .put(
-            `http://localhost:5000/scenarios/${selectedScenario.id}`,
+            `https://vechicle-scenario-api.onrender.com/scenarios/${selectedScenario.id}`,
             selectedScenario
           )
           .then((response) => {

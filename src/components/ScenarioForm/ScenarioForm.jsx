@@ -38,7 +38,7 @@ const ScenarioForm = () => {
     };
 
     // Send a POST request to the json-server API to add the new scenario
-    fetch("http://localhost:5000/scenarios", {
+    fetch("https://vechicle-scenario-api.onrender.com/scenarios", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
